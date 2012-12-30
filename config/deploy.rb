@@ -1,3 +1,5 @@
+default_run_options[:pty] = true
+
 set :application, "ruby4kidswebsite"
 set :repository,  "https://github.com/ruby4kids/ruby4kidswebsite.git"
 
