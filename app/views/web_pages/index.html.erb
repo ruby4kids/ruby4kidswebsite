@@ -9,7 +9,7 @@
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:content) %></th>
       <th><%= model_class.human_attribute_name(:status) %></th>
-      <th><%= model_class.human_attribute_name(:url) %></th>
+      <th><%= model_class.human_attribute_name(:slug) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -21,7 +21,7 @@
         <td><%= web_page.title %></td>
         <td><%= web_page.content %></td>
         <td><%= web_page.status %></td>
-        <td><%= web_page.url %></td>
+        <td><%= web_page.slug %></td>
         <td><%=l web_page.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

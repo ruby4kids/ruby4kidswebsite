@@ -11,15 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120904183049) do
+ActiveRecord::Schema.define(:version => 20121230184142) do
 
   create_table "web_pages", :force => true do |t|
     t.string   "title"
     t.text     "content"
     t.string   "status"
-    t.string   "url"
+    t.string   "slug"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.text     "html"
   end
 
 end

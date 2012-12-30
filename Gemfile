@@ -24,6 +24,12 @@ gem 'jquery-rails'
 
 gem "twitter-bootstrap-rails", :group => :assets
 
+gem "friendly_id" 
+
+gem 'redcarpet'
+
+gem 'nokogiri'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -38,3 +44,4 @@ gem "twitter-bootstrap-rails", :group => :assets
 
 # To use debugger
 # gem 'debugger'
+
