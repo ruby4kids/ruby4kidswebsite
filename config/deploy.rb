@@ -1,3 +1,5 @@
+require "bundler/capistrano"
+
 default_run_options[:pty] = true
 
 set :application, "ruby4kidswebsite"
@@ -14,6 +16,8 @@ role :app, "web.ruby4kids.com"                          # This may be the same a
 role :db,  "web.ruby4kids.com", :primary => true # This is where Rails migrations will run
 
 # if you want to clean up old releases on each deploy uncomment this:
+after "deploy:update_code", "deploy:migrate"
+
 after "deploy:restart", "deploy:cleanup"
 
 # if you're still using the script/reaper helper you will need
