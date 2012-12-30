@@ -30,6 +30,16 @@ gem 'redcarpet'
 
 gem 'nokogiri'
 
+#gem 'omniauth'
+gem 'omniauth-twitter'
+
+group :development do
+  gem 'debugger'
+
+end
+
+gem 'declarative_authorization'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

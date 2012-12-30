@@ -1,4 +1,6 @@
 class WebPagesController < ApplicationController
+  filter_access_to :all
+
   # GET /web_pages
   # GET /web_pages.json
   def index
