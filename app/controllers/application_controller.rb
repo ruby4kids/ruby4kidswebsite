@@ -17,6 +17,6 @@ class ApplicationController < ActionController::Base
   end
 
   def permission_denied
-    render :template => 'shared/denied', :layout => false
+    redirect_to root_path
   end
 end
