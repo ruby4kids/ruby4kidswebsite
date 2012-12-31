@@ -39,6 +39,9 @@ gem 'declarative_authorization'
 
 gem 'capistrano'
 
+gem "less-rails-bootstrap"
+gem "less-rails-bootstrap-devise", :git => 'git://github.com/bigbento/less-rails-bootstrap-devise.git'
+
 gem 'devise'
 
 # To use ActiveModel has_secure_password
