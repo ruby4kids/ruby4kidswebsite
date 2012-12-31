@@ -1,4 +1,6 @@
 class WebPagesController < ApplicationController
+  before_filter :authenticate_user!
+
   filter_access_to :all
 
   # GET /web_pages

@@ -55,6 +55,8 @@ Ruby4kidswebsite::Application.configure do
     :email_prefix => "[ruby4kids] ", 
     :sender_address => %{"notifier" <notifier@ruby4kids.com>}, 
     :exception_recipients => %w{alberto@moralitos.com}
+    
+  config.action_mailer.default_url_options = { :host => 'web.ruby4kids.com' }
 
   # Enable threaded mode
   # config.threadsafe!
