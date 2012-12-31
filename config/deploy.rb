@@ -1,5 +1,7 @@
 require "bundler/capistrano"
 
+load 'deploy/assets'
+
 default_run_options[:pty] = true
 
 set :application, "ruby4kidswebsite"
