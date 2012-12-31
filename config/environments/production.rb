@@ -51,6 +51,11 @@ Ruby4kidswebsite::Application.configure do
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 
+  config.middleware.use ExceptionNotifier,
+    :email_prefix => "[ruby4kids] ", 
+    :sender_address => %{"notifier" <notifier@ruby4kids.com>}, 
+    :exception_recipients => %w{alberto@moralitos.com}
+
   # Enable threaded mode
   # config.threadsafe!
 
@@ -60,6 +65,8 @@ Ruby4kidswebsite::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  config.action_mailer.delivery_method = :smtp
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)

@@ -54,6 +54,8 @@ GEM
     debugger-ruby_core_source (1.1.6)
     declarative_authorization (0.5.6)
     erubis (2.7.0)
+    exception_notification (2.5.2)
+      actionmailer (>= 3.0.4)
     execjs (1.4.0)
       multi_json (~> 1.0)
     friendly_id (4.0.9)
@@ -158,6 +160,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   debugger
   declarative_authorization
+  exception_notification
   friendly_id
   jquery-rails
   mysql2
