@@ -31,10 +31,6 @@ gem 'redcarpet'
 
 gem 'nokogiri'
 
-group :development do
-  gem 'debugger'
-end
-
 gem 'declarative_authorization'
 
 gem 'capistrano'
